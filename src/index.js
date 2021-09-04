@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import { UseHotelProvider } from "./hooks/useHotelContext";
+import { BrowserRouter as Router } from "react-router-dom";
+// import ProgressBar from "@badrap/bar-of-progress";
 
+// const progress = new ProgressBar({
+//   size: 2,
+//   color: "#EF4444",
+//   className: "z-100",
+//   delay: 100,
+// });
+// Router.events.on("routeChangeStart", progress.start);
+// Router.events.on("routeChangeComplete", progress.finish);
+// Router.events.on("routeChangeError", progress.finish);
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Router>
+    <UseHotelProvider>
+      <App />
+    </UseHotelProvider>
+  </Router>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

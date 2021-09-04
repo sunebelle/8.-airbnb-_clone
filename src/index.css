@@ -1,13 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* https://tailwindcss.com/docs/functions-and-directives#apply */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
+@layer components {
+  .button {
+    @apply px-4 py-2 border cursor-pointer rounded-full hover:shadow-lg active:bg-gray-100 active:scale-95 transition transform duration-100 ease-out;
+  }
+}
+
+.footer__container {
+  height: calc(100vh - theme("spacing.20"));
+}
+/* <header className="h-20 top-0 shadow-md z-50 bg-white sm:px-20 px-4 py-8 flex fixed w-full justify-between items-center text-base"> */
