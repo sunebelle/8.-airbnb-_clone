@@ -1,12 +1,14 @@
 # Website link:
 
+    https://sunebelle-airbnb.netlify.app
+
 ## Resources
 
 - react-map-gl: https://www.npmjs.com/package/react-map-gl
 - mapbox: https://www.mapbox.com
 - react-date-range
 - date-fns
-- geolib: https://github.com/manuelbieh/Geolib  (marker for map)
+- geolib: https://github.com/manuelbieh/Geolib (marker for map)
 - youtube challenge: https://www.youtube.com/watch?v=G5mmrBkCaP8&t=1875s
 
 In the project directory, you can run:
